@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Đăng ký khám sức khỏe</title>
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="css/styles.css" />
 </head>
 <body>
   <div class="main-wrapper">
@@ -27,15 +27,15 @@
         <div class="form-field">
           <label>Ngày sinh</label>
           <div class="dob-group">
-            <input type="number" id="dob-day" placeholder="Ngày" min="1" max="31" required />
-            <input type="number" id="dob-month" placeholder="Tháng" min="1" max="12" required />
-            <input type="number" id="dob-year" placeholder="Năm" min="1900" max="2100" required />
+            <input type="number" id="dob-day" placeholder="Ngày" />
+            <input type="number" id="dob-month" placeholder="Tháng" />
+            <input type="number" id="dob-year" placeholder="Năm" />
           </div>
         </div>
 
         <div class="form-field">
           <label for="gender">Giới tính</label>
-          <select id="gender" required>
+          <select id="gender">
             <option value="">-- Chọn --</option>
             <option value="Nam">Nam</option>
             <option value="Nữ">Nữ</option>
@@ -51,6 +51,6 @@
     </div>
   </div>
 
-  <script src="script.js"></script>
+  <script src="js/script.js"></script>
 </body>
 </html>
