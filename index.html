@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Đăng ký khám sức khỏe</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="main-wrapper">
+    <div class="container">
+      <h1>Form Đăng Ký Khám Sức Khỏe Tại Mirai</h1>
+      <form id="registrationForm">
+        <div class="form-field">
+          <label for="employeeId">Mã nhân viên *</label>
+          <div class="input-group">
+            <input type="text" id="employeeId" required />
+            <button type="button" id="checkCodeBtn">Tải lại thông tin</button>
+          </div>
+        </div>
+
+        <div class="form-field">
+          <label for="fullName">Họ và tên</label>
+          <input type="text" id="fullName" />
+        </div>
+
+        <div class="form-field">
+          <label>Ngày sinh</label>
+          <div class="dob-group">
+            <input type="number" id="dob-day" placeholder="Ngày" min="1" max="31" required />
+            <input type="number" id="dob-month" placeholder="Tháng" min="1" max="12" required />
+            <input type="number" id="dob-year" placeholder="Năm" min="1900" max="2100" required />
+          </div>
+        </div>
+
+        <div class="form-field">
+          <label for="gender">Giới tính</label>
+          <select id="gender" required>
+            <option value="">-- Chọn --</option>
+            <option value="Nam">Nam</option>
+            <option value="Nữ">Nữ</option>
+            <option value="Khác">Khác</option>
+          </select>
+        </div>
+
+        <h2>Chọn 1 khung giờ khám duy nhất</h2>
+        <div id="scheduleContainer"></div>
+        <div id="statusMessage"></div>
+        <button type="submit">Đăng ký</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
