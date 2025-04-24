@@ -83,6 +83,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const radio = document.querySelector(`input[value='${demoData.selectedSlot}']`);
     if (radio && !radio.disabled) radio.checked = true;
+
     statusMessage.innerText = demoData.found ? "✅ Đã nạp dữ liệu mẫu" : "Không tìm thấy dữ liệu";
   });
 
