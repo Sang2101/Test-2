@@ -1,0 +1,133 @@
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to bottom, #d0ebff, #ffffff);
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-wrapper {
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 700px;
+  margin: auto;
+  background: #fff;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  border: 1px solid #ccc;
+}
+
+h1, h2 {
+  text-align: center;
+  color: #1a237e;
+}
+
+.form-field {
+  margin-bottom: 15px;
+}
+
+label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+}
+
+input, select, button {
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+.input-group {
+  display: flex;
+  gap: 10px;
+}
+
+.input-group input {
+  flex: 3;
+  padding: 10px;
+}
+
+.input-group button {
+  flex: 1;
+  padding: 10px;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.input-group button:hover {
+  background: #0056b3;
+}
+
+.dob-group {
+  display: flex;
+  gap: 10px;
+}
+
+.dob-group input {
+  width: 100%;
+  max-width: 80px;
+  padding: 10px;
+}
+
+.schedule-group {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 12px 16px;
+  margin-bottom: 20px;
+  background-color: #f9f9f9;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.03);
+}
+
+.schedule-group strong {
+  display: block;
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+  color: #1a237e;
+  font-weight: 700;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 4px;
+}
+
+.schedule-option {
+  margin: 3px 0;
+}
+
+.schedule-option label {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+  font-weight: normal;
+}
+
+#statusMessage {
+  margin-top: 10px;
+  font-weight: bold;
+  color: green;
+}
+
+button[type="submit"] {
+  background: #28a745;
+  color: white;
+  padding: 10px;
+  width: 100%;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background: #218838;
+}
